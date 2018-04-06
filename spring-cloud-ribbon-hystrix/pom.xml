@@ -3,18 +3,18 @@
 
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.xwolf</groupId>
-    <artifactId>learn-spring-cloud</artifactId>
-    <version>0.0.1.SNAPSHOT</version>
+    <artifactId>spring-cloud-ribbon-hystrix</artifactId>
     <packaging>pom</packaging>
-    <name>learn-spring-cloud</name>
+
+    <name>spring-cloud-ribbon-hystrix</name>
     <url>http://maven.apache.org</url>
+    <version>0.0.1.SNAPSHOT</version>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
     <modules>
-        <module>spring-cloud-register-discovery</module>
-        <module>spring-cloud-ribbon-hystrix</module>
+        <module>service-ribbon</module>
     </modules>    
 
 

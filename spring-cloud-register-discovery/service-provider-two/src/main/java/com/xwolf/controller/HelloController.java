@@ -21,7 +21,7 @@ public class HelloController {
 
     @GetMapping("hello")
     public String hello(){
-        ServiceInstance serviceInstance = client.getInstances("service-provider-2").get(0);
+        ServiceInstance serviceInstance = client.getInstances("service-provider").get(0);
         log.info("host={},port={},serviceId={},metaData={},uri={}",
                 serviceInstance.getHost(),
                 serviceInstance.getPort(),

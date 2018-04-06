@@ -1,0 +1,33 @@
+server:
+  port: 8380
+eureka:
+  client:
+    service-url:
+          defaultZone: http://localhost:8180/eureka,http://localhost:8181/eureka
+  instance:
+    hostname: localhost
+spring:
+  application:
+    name: service-ribbon
+  cloud:
+    loadbalancer:
+      retry:
+        enabled: true
+service-ribbon:
+          ribbon:
+             NFLoadBalancerRuleClassName:  com.netflix.loadbalancer.WeightedResponseTimeRule
+
+info:
+   app:
+     name: service-ribbon
+     description: 基于eureka HA 服务注册与发现ribbon
+     version: 1.0.0
+   base:
+     author: xwolf
+     description: spring cloud ribbon learn
+     team-name: xwolf-team
+     email:  snowxwolf@foxmail.com
+
+logging:
+  level:
+      - info
