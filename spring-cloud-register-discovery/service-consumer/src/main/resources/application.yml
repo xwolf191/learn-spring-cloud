@@ -1,0 +1,25 @@
+server:
+  port: 8280
+eureka:
+  client:
+    service-url:
+          defaultZone: http://localhost:8180/eureka,http://localhost:8181/eureka
+  instance:
+    hostname: localhost
+spring:
+  application:
+    name: service-consumer
+info:
+   app:
+     name: service-consumer
+     description: 基于eureka HA 服务注册与发现
+     version: 1.0.0
+   base:
+     author: xwolf
+     description: spring cloud eureka learn
+     team-name: xwolf-team
+     email:  snowxwolf@foxmail.com
+
+logging:
+  level:
+      - info
