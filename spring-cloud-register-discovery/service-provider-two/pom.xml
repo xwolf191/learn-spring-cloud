@@ -3,11 +3,11 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.xwolf</groupId>
-  <artifactId>service-discovery</artifactId>
+  <artifactId>service-provider-two</artifactId>
   <version>1.0.0.RELEASE</version>
   <packaging>jar</packaging>
 
-  <name>service-discovery</name>
+  <name>service-provider-two</name>
   <url>http://maven.apache.org</url>
 
   <properties>

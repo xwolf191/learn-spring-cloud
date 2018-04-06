@@ -2,11 +2,11 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
     <modelVersion>4.0.0</modelVersion>
-
-    <artifactId>service-register-2</artifactId>
+    <groupId>com.xwolf</groupId>
+    <artifactId>service-register-two</artifactId>
     <packaging>jar</packaging>
 
-    <name>service-register-2</name>
+    <name>service-register-two</name>
     <url>http://maven.apache.org</url>
 
     <properties>
