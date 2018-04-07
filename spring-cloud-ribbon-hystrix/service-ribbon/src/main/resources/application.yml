@@ -16,6 +16,20 @@ spring:
 service-ribbon:
           ribbon:
              NFLoadBalancerRuleClassName:  com.netflix.loadbalancer.WeightedResponseTimeRule
+             #请求连接的超时时间
+             ConnectTimeOut: 10
+             ReadTimeout:    10
+             OkToRetryOnAllOperations: true
+             MaxAutoRetriesNextServer: 2
+             MaxAutoRetries: 1
+#断路器的超时时间需要大于ribbon的超时时间，不然不会触发重试。
+hystrix:
+    command:
+        default:
+             :execution:
+                    isolation:
+                           thread:
+                                timeoutInMilliseconds: 12
 
 info:
    app:
