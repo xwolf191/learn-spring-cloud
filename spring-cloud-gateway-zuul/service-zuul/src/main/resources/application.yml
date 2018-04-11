@@ -1,0 +1,40 @@
+spring:
+  application:
+    name: service-zuul
+
+server:
+  port: 8480
+
+eureka:
+  client:
+    service-url:
+          defaultZone: http://localhost:8180/eureka,http://localhost:8181/eureka
+  instance:
+    hostname: localhost
+info:
+   app:
+     name: service-zuul
+     description: api 网关zuul学习
+     version: 1.0.0
+   base:
+     author: xwolf
+     description: spring cloud zuul learn
+     team-name: xwolf-team
+     email:  snowxwolf@foxmail.com
+
+logging:
+  level:
+      - info
+zuul:
+  routes:
+     service-provider:
+                  path: /sp/**
+                  serviceId: service-provider
+
+  ignore-local-service: true
+  host:
+    connect-timeout-millis: 3000
+    max-total-connections: 100
+    max-per-route-connections: 20
+    time-unit: milliseconds
+
