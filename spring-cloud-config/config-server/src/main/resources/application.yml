@@ -1,0 +1,20 @@
+server:
+  port: 8580
+spring:
+  profiles:
+    active: dev
+  config:
+    name: cloud-config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/xwolf191/learn-spring-cloud
+          username: 2324808561@qq.com
+          password: 195449@wolf
+          default-label: master
+      label: master
+
+
+
+

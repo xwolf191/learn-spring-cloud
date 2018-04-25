@@ -1,0 +1,14 @@
+spring:
+  profiles:
+    active: dev
+  config:
+    name: cloud-config-client
+  cloud:
+    config:
+      label: master
+      uri: http://localhost:8580
+      profile: dev
+  application:
+    name: cloud-config-server
+server:
+  port: 8581

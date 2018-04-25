@@ -1,0 +1,14 @@
+
+info:
+   app:
+     name: config-config test
+     description: config server配置中心
+     version: 1.0.0
+   base:
+     author: xwolf
+     description: spring cloud config server配置中心
+     team-name: xwolf-team
+     email:  snowxwolf@foxmail.com
+
+
+
