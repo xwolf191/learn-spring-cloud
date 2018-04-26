@@ -1,0 +1,14 @@
+
+info:
+   app:
+     name: zipkin server
+     description: zipkin server监控中心
+     version: 1.0.0
+   base:
+     author: xwolf
+     description: zipkin server监控中心
+     team-name: xwolf-team
+     email:  snowxwolf@foxmail.com
+
+
+

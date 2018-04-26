@@ -1,0 +1,36 @@
+server:
+  port: 8681
+
+info:
+   app:
+     name: zipkin client
+     description: zipkin server监控中心
+     version: 1.0.0
+   base:
+     author: xwolf
+     description: zipkin server监控中心
+     team-name: xwolf-team
+     email:  snowxwolf@foxmail.com
+
+eureka:
+  client:
+    enabled: true
+    fetch-registry: true
+    service-url:
+        defaultZone:  http://localhost:8180/eureka,http://localhost:8181/eureka
+  instance:
+    hostname: localhost
+
+spring:
+  zipkin:
+       base-url: http://localhost:8680
+  sleuth:
+        enabled: true
+        sampler:
+          probability: 1.0
+feign:
+   hystrix:
+      enabled: true
+
+
+
