@@ -8,3 +8,4 @@ spring cloud 学习,源码在dev分支
 >* spring-cloud-feign feign简化服务调用和容错
 >* spring-cloud-gateway-zuul zuul api网关服务
 >* spring-cloud-config  config 配置中心
+>* spring-cloud-monitor zipkin sleuth监控中心
