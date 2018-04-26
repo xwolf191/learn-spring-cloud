@@ -10,8 +10,8 @@ spring:
       server:
         git:
           uri: https://github.com/xwolf191/learn-spring-cloud
-          username: 2324808561@qq.com
-          password: 195449@wolf
+          username: xxxxx
+          password: xxxxx
           default-label: master
       label: master
 
